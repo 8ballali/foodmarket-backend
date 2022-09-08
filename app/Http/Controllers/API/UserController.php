@@ -78,6 +78,7 @@ class UserController extends Controller
                 'token_type' => 'Bearer',
                 'user' => $user
             ]);
+            //Error When Registering
         } catch (\Exception $error) {
             return ResponseFormatter::error([
                 'message' => 'Something went wrong',
